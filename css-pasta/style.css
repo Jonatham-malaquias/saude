@@ -1,0 +1,1627 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none; text-decoration: none;
+    border: none !important;
+
+}
+/* -------------------------barra de rolagem------------ */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px #fff;
+            box-shadow: inset 0 0 5px #fff; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(241, 125, 241, 0.384); 
+    border-radius: 10px;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(172, 84, 172, 0.425); 
+  }
+  /* ----------------------fim barra de rolagem-------------- */
+/* -----------------------------topo--------------------------------- */
+
+body{
+    background-color: #191C2B;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #d9d9d975;
+
+    border: 1px solid black;
+}
+
+header .center{
+    height: 603px;
+    width: 86%;
+    margin: 0 auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+header .center .titulo-subtitulo-btn{
+    width: 500px;
+
+    /* border: 1px solid black; */
+}
+
+header .center .titulo-subtitulo-btn .titulo{
+    font-size: 64px;
+}
+
+header .center .titulo-subtitulo-btn .subtitulo{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    height: 62px;
+    width: 375px;
+
+    background-color: #CB0136;
+    border-radius: 31px;
+    border: none;
+
+    color: #fff;
+    cursor: pointer;
+
+    font-size: 25px;
+
+    -webkit-transition: .5s;
+
+    -o-transition: .5s;
+
+    transition: .5s;
+}
+.btn:hover{
+    background-color: #f01a53;
+}
+
+/* -----------botão 2 */
+header .center .btn.aparece{
+    display: none
+}
+/* --------------fim botão 2 */
+
+header .center .imagens{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    width: 70%;
+    height: 100%;
+
+    overflow: none;
+
+    border: 1px solid red;
+}
+
+.meninacorrendo{
+    height: 90%;
+    width: 350px;
+    background-image: url('/imagem-video/imgTopo1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid blue;
+
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+}
+.homemcorrendo{
+    height: 90%;
+    width: 418px;
+    background-image: url('/imagem-video/imgTopo2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid blue;
+
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+
+/* ----------------------------fim-topo--------------------------------- */
+
+/* -----------------------------descrição--------------------------------- */
+.container{
+    /* border: 1px solid red; */
+}
+.center{
+    width: 86%;
+    margin: 0 auto;
+
+    overflow-x: hidden;
+
+    border: 1px solid white;
+}
+
+.container .center .descricao{
+    margin-top: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container .center .descricao h1{
+    font-size: 32px;
+    margin-bottom: 15px;
+
+    color: #A8A8BA;
+}
+.container .center .descricao p{
+    color: #A8A8BA;
+    font-size: 20px;
+}
+/* -----------------------------descrição--------------------------------- */
+
+/* -----------------------------Serviços--------------------------------- */
+.servicos{
+    border: 1px solid #000;
+}
+
+.servicos .titulo{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #A8A8BA;
+}
+
+.servicos .faixas{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    position: relative;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    overflow: hidden;
+
+    /* border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px; */
+    background-color: #45526C;
+    border: 1px solid #000;
+
+    /* animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; */
+}
+
+.servicos .faixas .descricaoServico{
+    margin-left: 100px;
+}
+
+.servicos .faixas .descricaoServico h1{
+    font-size: 32px;
+}
+
+.servicos .faixas .descricaoServico p{
+    width: 520px;
+    font-size: 20px;
+
+    margin-bottom: 50px;
+}
+
+.servicos .faixas .descricaoServico .btn{
+    width: 300px;
+}
+
+/* data-animacao */
+[data-animacao]{
+    opacity: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+[data-animacao='left'] {
+    -webkit-transform: translate3d( -90%, 0, 0);
+            transform: translate3d( -90%, 0, 0);
+}
+
+[data-animacao='right'] {
+    -webkit-transform: translate3d(90%, 0, 0);
+            transform: translate3d(90%, 0, 0);
+}
+
+[data-animacao].aparece {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+}
+
+/* .animacao{
+    opacity: 0;
+}
+
+.animacao.aparece{
+    opacity: 1;
+
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+} */
+/* ----------------------------fim-Serviços--------------------------------- */
+
+
+/* ----------------------------container2--------------------------------- */
+.container2 .center{
+    overflow-x: hidden;
+}
+.container2 .center .historia{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #A8A8BA;
+}
+.container2 .center .testemunhas{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    margin-bottom: 40px;
+}
+.container2 .center .testemunhas h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+
+    color: #A8A8BA;
+}
+
+/* ----------------------------imagens*/
+.container2 .center .testemunhas .imagens{
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid black;
+
+    gap: 90px;
+}
+
+.container2 .center .testemunhas .imagens .foto{
+    height: 200px;
+    width: 375px;
+
+    background-color: #fff;
+}
+
+.container2 .center .testemunhas .imagens .imagem1{
+    height: 200px;
+    width: 375px;
+
+    background-image: url('/imagem-video/clienteSatisfeito1.jpg');
+    background-position: 0px -90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2 .center .testemunhas .imagens .imagem2{
+    height: 200px;
+    width: 375px;
+
+    background-image: url('/imagem-video/clienteSatisfeito2.jpg');
+    background-position: 0px -90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2 .center .testemunhas .imagens .imagem3{
+    height: 200px;
+    width: 375px;
+
+    background-image: url('/imagem-video/clienteSatisfeito4.jpg');
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2 .center .testemunhas .imagens .imagem4{
+    height: 200px;
+    width: 375px;
+
+    background-image: url('/imagem-video/clienteSatisfeito5.jpg');
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2 .center .testemunhas .btn{
+    margin: 0 auto;
+}
+
+/* --------------------------e-book---------------------- */
+
+.container2 .ebook{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #fff;
+}
+
+.container2 .ebook .titulo-mensagem{
+    width: 520px;
+}
+
+.container2 .ebook h1{
+    font-size: 32px;
+    color: #A8A8BA;
+}
+
+.container2 .ebook p{
+    font-size: 20px;
+    color: #A8A8BA
+}
+
+.container2 .ebook .img-ebook{
+    height: 300px;
+    width: 300px;
+
+    background-image: url('/imagem-video/e-book.png');
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    background-size: cover;
+
+}
+/* ----------------------fim-e-book------------------- */
+
+/* --------------------------e-mail---------------------- */
+.container3{
+    background-color: #A8A8BA;
+}
+
+.container3 .center h1{
+    margin-top: 22px;
+    margin-bottom: 20px;
+    font-size: 32px;
+
+    text-align: center;
+}
+.container3 .center .formulario-imagem{
+    width: 573px;
+    border: 1px solid #fff;
+    
+    margin: 0 auto;
+}
+.container3 .center .formulario-imagem label{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container3 .center .formulario-imagem input{
+    height: 40px;
+    width: 100%;
+
+    font-size: 20px;
+
+    padding-left: 20px;
+    border-radius: 30px;
+
+    border: none;
+    outline: none;
+}
+.container3 .center .formulario-imagem .divBtn{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.container3 .center .formulario-imagem .divBtn .btn{
+    width: 200px;
+    height: 62px;
+
+
+}
+/* -------------------------fim-e-mail---------------------- */
+
+/* ----------------------------preco--------------------- */
+
+.preco .center{
+    border: 1px solid #fff;
+}
+
+.preco .center .divTitulo{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.preco .center .divTitulo h1{
+    text-align: center;
+    font-size: 64px;
+    width: 217px;
+
+    color: #fff;
+}
+
+.preco .center .formadepagamento{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    margin-bottom: 100px;
+
+    border: 1px solid #fff;
+}
+.preco .center .formadepagamento .pagamento1,
+.preco .center .formadepagamento .pagamento2{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    border: 1px solid #fff;
+}
+
+.preco .center .formadepagamento .pagamento1 p,
+.preco .center .formadepagamento .pagamento2 p{
+    font-size: 64px;
+    font-weight:bold;
+    color: #fff;
+
+}
+
+.preco .center .formadepagamento .pagamento1 span,
+.preco .center .formadepagamento .pagamento2 span{
+    font-size: 32px;
+    color: #CB0136;
+    display: block;
+
+    margin-bottom: 23px;
+}
+
+.preco .center .formadepagamento .pagamento1 .btn,
+.preco .center .formadepagamento .pagamento2 .btn{
+    width: 250px;
+    height: 50px;
+}
+
+.preco .center .formadepagamento .pagamento1 .btn:hover,
+.preco .center .formadepagamento .pagamento2 .btn:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.preco .center .garantido{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.preco .center .garantido .boxgarantido{
+    
+    padding: 15px;
+    background-color: #d9d9d94b;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    border-radius: 35px;
+
+    color: #fff;
+    font-size: 40px;
+
+    -webkit-transition: .5s;
+
+    -o-transition: .5s;
+
+    transition: .5s;
+}
+.preco .center .garantido .boxgarantido:hover{
+    background-color: #d9d9d973;
+}
+
+/* -------------------------preco--------------------- */
+
+/* --------------------------rodape--------------------- */
+
+footer{
+    height: 50px;
+    width: 100%;
+
+    background-color: #D9D9D9;
+}
+
+footer p{
+    line-height: 50px;
+    text-align: center;
+}
+/* -------------------------fim-rodape------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes slide {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 81%;
+    }
+} */
+
+
+
+@media screen and (max-width: 1500px) {
+    
+}
+
+@media screen and (max-width: 1300px) {
+    header .center .imagens .meninacorrendo{
+        height: 550px;
+        width: 300px;
+        background-position: center;
+        background-size: contain;
+
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+
+        z-index: 100;
+        
+        /* border: 1px solid black; */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+
+@media screen and (max-width: 1115px) {  
+
+    body{
+        overflow-x: hidden;
+    }
+    header .center .imagens .meninacorrendo{
+        height: 476px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+        
+        /* border: 1px solid black; */
+    }
+
+    header .center .imagens .homemcorrendo{
+        height: 476px;
+        width: 300px;
+        background-position: center;
+        background-size: contain;
+
+        position: absolute;
+        right: 0px;
+        bottom: 20px;
+        
+        /* border: 1px solid black; */
+    }
+}
+
+@media screen and (max-width: 1090px){
+    header .center .imagens .meninacorrendo{
+        height: 476px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+
+        z-index: 100;
+        
+        /* border: 1px solid black; */
+    }
+
+    header .center .imagens .homemcorrendo{
+        height: 476px;
+        width: 300px;
+        background-position: center;
+        background-size: contain;
+
+        position: absolute;
+        right: 0px;
+        bottom: 20px;
+        
+        /* border: 1px solid black; */
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    body{
+        overflow-x: hidden;
+    }
+    .preco .center .garantido{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .preco .center .garantido .boxgarantido{
+        width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        overflow-x: hidden;
+    }
+/* -------------------------header----------------------- */
+    header .center .titulo-subtitulo-btn{
+        width: 400px;
+    
+        /* border: 1px solid black; */
+    }
+    
+    header .center .titulo-subtitulo-btn .titulo{
+        font-size: 50px;
+    }
+    
+    header .center .titulo-subtitulo-btn .subtitulo{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .btn{
+        height: 62px;
+        width: 300px;
+    
+        background-color: #CB0136;
+        border-radius: 31px;
+        border: none;
+    
+        color: #fff;
+        cursor: pointer;
+    
+        font-size: 20px;
+    
+        -webkit-transition: .5s;
+    
+        -o-transition: .5s;
+    
+        transition: .5s;
+    }
+    
+    
+    header .center .imagens .meninacorrendo{
+        background-position: 0px;
+        /* border: 1px solid black; */
+    }
+    
+    header .center .imagens .homemcorrendo{
+        background-position: 10px 10px;
+        /* border: 1px solid black; */
+    }
+/* ----------------------testemunhas---------------------- */
+    .container2 .center .testemunhas .imagens .imagem1{
+        height: 200px;
+        width: 200px;
+    
+        background-image: url('/imagem-video/clienteSatisfeito1.jpg');
+        background-position: 0px -50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .container2 .center .testemunhas .imagens .imagem2{
+        height: 200px;
+        width: 200px;
+    
+        background-image: url('/imagem-video/clienteSatisfeito2.jpg');
+        background-position: 0px -90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .container2 .center .testemunhas .imagens .imagem3{
+        height: 200px;
+        width: 200px;
+    
+        background-image: url('/imagem-video/clienteSatisfeito4.jpg');
+        background-position: -50px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .container2 .center .testemunhas .imagens .imagem4{
+        height: 200px;
+        width: 200px;
+    
+        background-image: url('/imagem-video/clienteSatisfeito5.jpg');
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     /* ------------------------------ebook---------------- */
+     .container2 .ebook .img-ebook{
+        height: 300px;
+        width: 300px;
+
+        background-image: url('/imagem-video/e-book.png');
+        background-repeat: no-repeat;
+        background-position: 0 10px;
+        background-size: cover;
+
+    }
+    /* ---------------------------fim-ebook---------------- */
+
+}
+
+@media screen and (max-width: 834px) {
+    body{
+        overflow-x: hidden;
+    }
+    header .center{
+        height: 603px;
+        width: 85%;
+    }
+    
+    header .center .titulo-subtitulo-btn{
+        width: 450px;
+    
+         /* border: 1px solid black;  */
+    }
+    
+    header .center .titulo-subtitulo-btn .titulo{
+        font-size: 40px;
+    }
+    
+    header .center .titulo-subtitulo-btn .subtitulo{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .btn{
+        height: 62px;
+        width: 100%;
+    
+        font-size: 20px;
+    }
+    
+    header .center .imagens{
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    
+        position: relative;
+        width: 600px;
+    
+         /* border: 1px solid red; */
+    }
+    
+    /* ----------------------------fim-topo--------------------------------- */
+    
+    /* -------------------center------------------ */
+    .center{
+        width: 85%;
+    }
+    /* ------------------fim-center------------------ */
+
+    /* -------------------------fim-testemunhas---------------------- */
+    .container2 .center .testemunhas .btn{
+        margin: 0 auto;
+        width: 300px;
+    }
+    /* -------------------------fim-testemunhas---------------------- */
+    
+    /* ------------------------------ebook---------------- */
+    .container2 .ebook .img-ebook{
+        height: 300px;
+        width: 300px;
+
+        background-image: url('/imagem-video/e-book.png');
+        background-repeat: no-repeat;
+        background-position: 0 20px;
+        background-size: cover;
+
+    }
+    /* ---------------------------fim-ebook---------------- */
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        overflow-x: hidden;
+    }
+/* ---------------------------header---------------- */
+    header .center{
+        width: 86%;
+        margin: 0 auto;
+        
+        display: -webkit-box;
+        
+        display: -ms-flexbox;
+        
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        position: relative;
+
+        overflow: hidden;
+    }
+        
+    header .center .titulo-subtitulo-btn{
+        width: 500px;
+
+        /* border: 1px solid black; */
+    }
+
+    header .center .titulo-subtitulo-btn .titulo{
+        font-size: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    header .center .titulo-subtitulo-btn h1{
+        width: 224px;
+        text-align: center;
+    }
+
+    header .center .titulo-subtitulo-btn .subtitulo{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    header .center .titulo-subtitulo-btn .btn{
+        display: none;
+    }
+
+    header .center .imagens .meninacorrendo{
+        height: 376px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        left: 80px;
+        top: -40px;
+        
+        /* border: 1px solid black; */
+    }
+
+    header .center .imagens .homemcorrendo{
+        height: 376px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        right: 50px;
+        top: -40px;
+        
+        /* border: 1px solid black; */
+    }
+
+    
+    header .center .btn.aparece{
+        display: block;
+
+        width: 290px;
+
+        position: absolute;
+        bottom: 10px;
+
+        z-index: 100;
+
+    }
+/* ----------------------------fim-topo--------------------------------- */
+    
+/* --------------------------e-book---------------------- */
+    .container2 .ebook .img-ebook{
+        height: 300px;
+        width: 300px;
+
+        background-image: url('/imagem-video/e-book.png');
+        background-repeat: no-repeat;
+        background-position: 0 20px;
+        background-size: cover;
+
+    }
+/* ----------------------fim-e-book------------------- */
+
+}
+
+@media screen and (max-width: 630px) {
+    body{
+        overflow-x: hidden;
+    }
+/* -----------------------------Serviços--------------------------------- */
+    .servicos{
+        border: 1px solid #000;
+    }
+
+    .servicos .titulo{
+        margin-bottom: 10px;
+        text-align: center;
+        color: #A8A8BA;
+    }
+
+    header .center .imagens .meninacorrendo{
+        height: 376px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        left: 100px;
+        top: -40px;
+        
+        /* border: 1px solid black; */
+    }
+
+    header .center .imagens .homemcorrendo{
+        height: 376px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        right: 100px;
+        top: -40px;
+        
+        /* border: 1px solid black; */
+    }
+
+    .servicos .faixas{
+        height: 250px;
+        width: 100%;
+        margin-bottom: 10px;
+
+        position: relative;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+
+        overflow: hidden;
+
+        /* border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px; */
+        background-color: #45526C;
+        border: 1px solid #000;
+
+        /* animation-name: slide;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; */
+    }
+
+    .servicos .faixas .descricaoServico{
+        margin-left: 50px;
+    }
+
+    .servicos .faixas .descricaoServico p{
+        width: 320px;
+        font-size: 18px;
+
+        margin-bottom: 18px;
+    }
+
+    .servicos .faixas .descricaoServico .btn{
+        width: 250px;
+    }
+/* ----------------------------fim-Serviços--------------------------------- */
+
+
+/* --------------------------e-book---------------------- */
+    .container2 .ebook{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border: 1px solid #fff;
+    }
+
+    .container2 .ebook .titulo-mensagem{
+        width: 100%;
+    }
+
+    .container2 .ebook h1{
+        font-size: 32px;
+        color: #A8A8BA;
+        text-align: center;
+    }
+
+    .container2 .ebook p{
+        font-size: 20px;
+        color: #A8A8BA;
+        margin-bottom: 10px;
+    }
+
+    .container2 .ebook .img-ebook{
+        height: 300px;
+        width: 300px;
+
+        background-image: url('/imagem-video/e-book.png');
+        background-repeat: no-repeat;
+        background-position: 0 -40px;
+        background-size: cover;
+
+    }
+/* ----------------------fim-e-book------------------- */
+
+/* --------------------------e-mail---------------------- */
+
+.container3 .center .formulario-imagem{
+    width: 100%;
+}
+.container3 .center .formulario-imagem label{
+    font-size: 18px;
+}
+
+.container3 .center .formulario-imagem input{
+    height: 40px;
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+}
+.container3 .center .formulario-imagem .divBtn{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.container3 .center .formulario-imagem .divBtn .btn{
+    width: 100px;
+    height: 62px;
+
+
+}
+/* -------------------------fim-e-mail---------------------- */
+
+/* ----------------------------preco--------------------- */
+    .preco .center .divTitulo h1{
+        text-align: center;
+        font-size: 54px;
+        width: 217px;
+
+        color: #fff;
+    }
+
+    .preco .center .formadepagamento{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        margin-bottom: 100px;
+
+        border: 1px solid #fff;
+    }
+    .preco .center .formadepagamento .pagamento1,
+    .preco .center .formadepagamento .pagamento2{
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 20px;
+
+        border: 1px solid #fff;
+    }
+    .preco .center .formadepagamento .pagamento2{
+        margin-bottom: 0;
+    }
+
+    .preco .center .formadepagamento .pagamento1 .btn:hover,
+    .preco .center .formadepagamento .pagamento2 .btn:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+/* ----------------------------garantido */
+
+    .preco .center .garantido .boxgarantido{
+        width: 300px;
+
+        border-radius: 25px;
+
+        color: #fff;
+        font-size: 32px;
+
+    }
+/* ------------------------fim-preco--------------------- */
+
+
+}
+
+@media screen and (max-width: 530px) {
+    
+
+    header .center .btn.aparece{
+        display: block;
+
+        width: 290px;
+
+        position: absolute;
+        bottom: 50px;
+
+        z-index: 100;
+
+    }
+
+    header .center .imagens .meninacorrendo{
+        height: 296px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        left: 120px;
+        top: 00px;
+
+        z-index: 10;
+        
+        /* border: 1px solid black; */
+    }
+
+    header .center .imagens .homemcorrendo{
+        height: 296px;
+        width: 150px;
+        background-position: center;
+
+        position: absolute;
+        right: 150px;
+        top: 0px;
+        
+        /* border: 1px solid black; */
+    }
+/* ----------------------------fim-topo--------------------------------- */
+   
+}
+
+@media screen and (max-width: 428px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    header .center{
+        overflow-y: hidden;
+    }
+
+    header .center .titulo-subtitulo-btn .titulo{
+        font-size: 30px;
+    }
+
+    header .center .titulo-subtitulo-btn .subtitulo{
+        font-size: 18px;
+        font-weight: 100;
+        margin-bottom: 50px;
+    }
+
+    header .center .titulo-subtitulo-btn .btn{
+        display: none;
+    }
+
+    header .center .imagens .meninacorrendo{
+        height: 296px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        left: 130px;
+        top: -40px;
+        
+        /* border: 1px solid black; */
+    }
+
+    header .center .imagens .homemcorrendo{
+        height: 296px;
+        width: 200px;
+        background-position: center;
+
+        position: absolute;
+        right: 150px;
+        top: -40px;
+        
+        /* border: 1px solid black; */
+    }
+
+/* ----------------------------fim-topo--------------------------------- */
+/* -----------------------------Serviços--------------------------------- */
+    .servicos{
+        border: 1px solid #fff;
+    }
+
+    .servicos .titulo{
+        margin-bottom: 10px;
+        text-align: center;
+        color: #A8A8BA;
+    }
+
+    .servicos .faixas{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        position: relative;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+
+        overflow: hidden;
+
+        /* border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px; */
+        background-color: #45526C;
+        border: 1px solid #000;
+
+        /* animation-name: slide;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; */
+    }
+
+    .servicos .faixas .descricaoServico{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .servicos .faixas .descricaoServico h1{
+        font-size: 24px;
+    }
+
+    .servicos .faixas .descricaoServico p{
+        width: 90%;
+        font-size: 16px;
+
+        margin-bottom: 15px;
+    }
+
+    .servicos .faixas .descricaoServico .btn{
+        width: 200px;
+    }
+
+    .servicos .faixas .imagem{
+        height: 250px;
+        width: 176px;
+
+        position: absolute;
+        right: 5%;
+        background-color: transparent;
+    }
+
+/* ----------------------------fim-Serviços--------------------------------- */
+
+/* ----------------------------imagens*/
+    .container2 .center .testemunhas .imagens{
+        margin-bottom: 15px;
+        gap: 20px;
+    }
+
+    .container2 .center .testemunhas .imagens .foto{
+        height: 200px;
+        width: 375px;
+
+        background-color: #fff;
+    }
+
+    .container2 .center .testemunhas .imagens .imagem1{
+        height: 200px;
+        width: 375px;
+
+        background-image: url('/imagem-video/clienteSatisfeito1.jpg');
+        background-position: 0px -90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container2 .center .testemunhas .imagens .imagem2{
+        height: 200px;
+        width: 375px;
+
+        background-image: url('/imagem-video/clienteSatisfeito2.jpg');
+        background-position: 0px -90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container2 .center .testemunhas .imagens .imagem3{
+        height: 200px;
+        width: 375px;
+
+        background-image: url('/imagem-video/clienteSatisfeito4.jpg');
+        background-position: 0px -25px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container2 .center .testemunhas .imagens .imagem4{
+        height: 200px;
+        width: 375px;
+
+        background-image: url('/imagem-video/clienteSatisfeito5.jpg');
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+/* ---------------------------fim-imagens*/
+    
+/* --------------------------e-book---------------------- */
+
+    .container2 .ebook{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        border: 1px solid #fff;
+    }
+
+    .container2 .ebook .titulo-mensagem{
+        width: 100%;
+    }
+
+    .container2 .ebook h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #A8A8BA;
+        text-align: center;
+    }
+
+    .container2 .ebook p{
+        font-size: 16px;
+        color: #A8A8BA;
+
+        margin-bottom: 20px;
+    }
+/* ----------------------fim-e-book------------------- */
+
+/* --------------------------e-mail---------------------- */
+
+    .container3 .center .formulario-imagem{
+        width: 100%;
+    }
+    .container3 .center .formulario-imagem label{
+        font-size: 18px;
+    }
+
+    .container3 .center .formulario-imagem input{
+        height: 40px;
+        width: 100%;
+
+        margin-bottom: 10px;
+
+        font-size: 18px;
+
+    }
+    .container3 .center .formulario-imagem .divBtn{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .container3 .center .formulario-imagem .divBtn .btn{
+        width: 100px;
+        height: 62px;
+
+
+    }
+/* -------------------------fim-e-mail---------------------- */
+
+/* ----------------------------preco--------------------- */
+    .preco .center .divTitulo h1{
+        text-align: center;
+        font-size: 54px;
+        width: 217px;
+
+        color: #fff;
+    }
+
+    .preco .center .formadepagamento{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        margin-bottom: 100px;
+
+        border: 1px solid #fff;
+    }
+    .preco .center .formadepagamento .pagamento1,
+    .preco .center .formadepagamento .pagamento2{
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 20px;
+
+        border: 1px solid #fff;
+    }
+    .preco .center .formadepagamento .pagamento2{
+        margin-bottom: 0;
+    }
+
+    .preco .center .formadepagamento .pagamento1 .btn:hover,
+    .preco .center .formadepagamento .pagamento2 .btn:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    /* ----------------------------garantido */
+
+    .preco .center .garantido .boxgarantido{
+        width: 300px;
+
+        border-radius: 25px;
+
+        color: #fff;
+        font-size: 32px;
+
+    }
+/* -------------------------preco--------------------- */
+
+}
+
+
+

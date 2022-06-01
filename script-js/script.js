@@ -23,7 +23,7 @@ const animacaoClass = 'aparece';
 
 function animescroll(){
 
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.5);;
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.5);
     console.log(windowTop);
 
     animacao.forEach(function(element){

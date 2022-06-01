@@ -192,6 +192,7 @@ header .center .imagens{
 /* -----------------------------Serviços--------------------------------- */
 .servicos{
     border: 1px solid #000;
+    overflow-x: hidden;
 }
 
 .servicos .titulo{

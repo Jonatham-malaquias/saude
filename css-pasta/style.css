@@ -1321,6 +1321,14 @@ footer p{
     body{
         overflow-x: hidden;
     }
+    
+    .btn{
+        max-width: 200px;
+        height: 45px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
 
     header .center{
         overflow-y: hidden;
@@ -1516,6 +1524,11 @@ footer p{
 
         margin-bottom: 20px;
     }
+    
+    .container2 .ebook .img-ebook{
+        width: 280px;
+        height: 280px;
+    }
 /* ----------------------fim-e-book------------------- */
 
 /* --------------------------e-mail---------------------- */
@@ -1612,17 +1625,21 @@ footer p{
     /* ----------------------------garantido */
 
     .preco .center .garantido .boxgarantido{
-        width: 300px;
+        width: 90%;
 
         border-radius: 25px;
 
         color: #fff;
-        font-size: 32px;
+        font-size: 20px;
 
     }
 /* -------------------------preco--------------------- */
 
 }
 
-
+@media screen and (max-width: 295px) {
+    .btn{
+        margin-top: 0px;
+    }
+}
 

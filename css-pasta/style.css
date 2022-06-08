@@ -50,12 +50,24 @@ body{
 
 header{
     background-color: #d9d9d975;
+    height: 603px;
+    
+    position: relative;
 
     border: 1px solid black;
 }
 
+header .videoCapa{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
 header .center{
-    height: 603px;
+    height: 100%;
     width: 86%;
     margin: 0 auto;
 
